@@ -1,0 +1,44 @@
+*,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+svg {
+    vertical-align: baseline;
+}
+
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0 !important;
+}
+
+html {
+
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    body {
+        font-family: 'Inter', Helvetica, sans-serif;
+        background-color: #000000;
+        color: white;
+        overflow-x: hidden;
+    }
+
+}
