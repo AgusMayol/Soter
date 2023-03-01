@@ -1,37 +1,45 @@
 @media (min-width: $mobile) {
 
     #app-container {
-        padding: 15px;
-        padding-bottom: 0;
+        // padding: 15px;
+        // padding-bottom: 0;
 
-        .waves {
-            margin-top: -15px;
-            margin-left: -15px;
-            top: 0;
-            left: 0;
+        #contenido-violeta {
+
             height: 220px;
 
-            svg {
-                height: 100%;
-                border-radius: 12px;
-            }
+            background-color: #635EFF;
 
-            h1 {
-                margin-top: -215px;
-                margin-left: 10px;
-            }
+        }
+
+        #contenido-blanco {
+            background-color: #ffffff;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+
+        #contenido-blanco2 {
+            background-color: #ffffff;
+            width: 100%;
+            height: 100%;
         }
 
         .status {
             border: 2.5px solid #635EFF;
             border-radius: 100%;
             padding: 15px 10px 17px 10px;
+            margin-top: -130px;
 
 
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
             justify-content: center;
+            background: #ffffff;
+            box-shadow: 5px 5px 39px #d9d9d9,
+                -5px -5px 39px #ffffff;
+
+            z-index: 9;
         }
 
         h1 {
@@ -42,6 +50,12 @@
         h2 {
             color: #635EFF;
             font-weight: bold;
+            font-size: 32px;
+        }
+
+        .btn-primary {
+            background-color: #635EFF;
+            border-color: #635EFF;
         }
 
         .alert {
@@ -55,24 +69,19 @@
             width: 100%;
             z-index: 99;
 
-            position: fixed;
-            bottom: 0;
+            top: 0;
             left: 0;
 
             nav {
-
-                /* From https://css.glass */
-                background: #101010;
-
                 transition: all .15s linear;
                 height: 60px;
                 border-radius: 12px 12px 0 0;
+                padding: 15px;
 
                 ul {
                     display: flex;
-                    justify-content: space-evenly;
+                    justify-content: space-between;
                     align-items: center;
-                    gap: 35px;
 
                     list-style-type: none;
 
@@ -83,20 +92,10 @@
                             font-weight: 700;
                             transition: all .15s linear;
 
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-
                             svg {
                                 stroke: white;
                                 width: 36px;
                                 height: 36px;
-                            }
-
-                            span {
-                                color: white;
-                                font-size: 14px;
                             }
                         }
                     }

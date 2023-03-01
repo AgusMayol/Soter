@@ -33,42 +33,42 @@ html {
   padding: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: white !important;
 }
 html body {
   font-family: "Inter", Helvetica, sans-serif;
-  background-color: #000000;
   color: white;
   overflow-x: hidden;
+  background-color: #635EFF;
 }
 
 @media (min-width: 0px) {
-  #app-container {
-    padding: 15px;
-    padding-bottom: 0;
-  }
-  #app-container .waves {
-    margin-top: -15px;
-    margin-left: -15px;
-    top: 0;
-    left: 0;
+  #app-container #contenido-violeta {
     height: 220px;
+    background-color: #635EFF;
   }
-  #app-container .waves svg {
+  #app-container #contenido-blanco {
+    background-color: #ffffff;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  #app-container #contenido-blanco2 {
+    background-color: #ffffff;
+    width: 100%;
     height: 100%;
-    border-radius: 12px;
-  }
-  #app-container .waves h1 {
-    margin-top: -215px;
-    margin-left: 10px;
   }
   #app-container .status {
     border: 2.5px solid #635EFF;
     border-radius: 100%;
     padding: 15px 10px 17px 10px;
+    margin-top: -130px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    background: #ffffff;
+    box-shadow: 5px 5px 39px #d9d9d9, -5px -5px 39px #ffffff;
+    z-index: 9;
   }
   #app-container h1 {
     font-size: 25px;
@@ -77,6 +77,11 @@ html body {
   #app-container h2 {
     color: #635EFF;
     font-weight: bold;
+    font-size: 32px;
+  }
+  #app-container .btn-primary {
+    background-color: #635EFF;
+    border-color: #635EFF;
   }
   #app-container .alert {
     width: 100%;
@@ -86,22 +91,19 @@ html body {
     height: 60px;
     width: 100%;
     z-index: 99;
-    position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
   }
   #app-container header nav {
-    /* From https://css.glass */
-    background: #101010;
     transition: all 0.15s linear;
     height: 60px;
     border-radius: 12px 12px 0 0;
+    padding: 15px;
   }
   #app-container header nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    gap: 35px;
     list-style-type: none;
   }
   #app-container header nav ul li a {
@@ -109,18 +111,10 @@ html body {
     text-decoration: none;
     font-weight: 700;
     transition: all 0.15s linear;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   #app-container header nav ul li a svg {
     stroke: white;
     width: 36px;
     height: 36px;
-  }
-  #app-container header nav ul li a span {
-    color: white;
-    font-size: 14px;
   }
 }/*# sourceMappingURL=styles.css.map */
